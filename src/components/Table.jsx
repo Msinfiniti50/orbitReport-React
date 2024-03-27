@@ -13,7 +13,7 @@ const Table = ({sat=[]}) => {
       {sat.map((satItem, id) => {
         return (
           <tr key={id}>
-            <td>{satItem.Name}</td>
+            <td>{satItem.name}</td>
             <td>{satItem.type_Of_Satellites}</td>
             <td>{satItem.launch_Date}</td>
             <td>{satItem.operational ? 'Active' : 'Inactive'}</td>
@@ -30,5 +30,4 @@ const Table = ({sat=[]}) => {
    </table>
   );
 };
-
 export default Table;
