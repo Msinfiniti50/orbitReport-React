@@ -14,9 +14,9 @@ const Table = ({sat=[]}) => {
         return (
           <tr key={id}>
             <td>{satItem.name}</td>
-            <td>{satItem.type_Of_Satellites}</td>
-            <td>{satItem.launch_Date}</td>
-            <td>{satItem.operational ? 'Active' : 'Inactive'}</td>
+            <td>{satItem.type}</td>
+            <td>{satItem.launchDate}</td>
+            <td>{satItem.orbitType ? 'Active' : 'Inactive'}</td>
           </tr>
         );
       })}
